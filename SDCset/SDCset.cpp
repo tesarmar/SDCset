@@ -697,8 +697,8 @@ void ConfigAdd(IN int argc, IN char* argv[], char* sConfigName){
 		}else if (!_stricmp("bgn", sRadioMode)) {
 			SDCcfg.radioMode = RADIOMODE_BGN;
 		}else{
-            printf("unknown radio mode,\nassuming 'bg'\n");
-			SDCcfg.radioMode = RADIOMODE_BG;
+            printf("unknown radio mode,\nassuming 'bga'\n");
+			SDCcfg.radioMode = RADIOMODE_BGA;
 		}
 	}
 
