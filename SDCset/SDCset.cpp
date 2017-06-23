@@ -1146,7 +1146,19 @@ void DoGlobal(IN int argc, IN char* argv[])
 		}
 		GCfg.probeDelay = dwProbeDelay;
 	}
-
+	
+	char* sOpmk = NULL;
+	if (GetOption(argc, argv, "opmk", &sOpmk) >= 0) {
+		if (!_stricmp("on", sOpmk)) {
+			GCfg.PMKcaching = 1;
+		} else if (!_stricmp("off", sOpmk)) {
+			GCfg.PMKcaching = 0;
+		}else{
+			printf("Unknown OPMK caching option\nassuming on\n");
+			GCfg.PMKcaching = 1;
+		}
+	}
+	
 	char* sTray = NULL;
 	if (GetOption(argc, argv, "tray", &sTray) >= 0) {
 		if (!_stricmp("on", sTray)) {
