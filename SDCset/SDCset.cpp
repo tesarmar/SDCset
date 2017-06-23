@@ -3,7 +3,7 @@
 
 #include "stdafx.h"
 #include "pwinreg.h"
-#include "Wincrypt.h"
+#include "wincrypt.h"
 
 
 extern "C" {
@@ -1340,8 +1340,3 @@ int WINAPI WinMain(	HINSTANCE hInstance,
 
     return gRetStatus;
 }   // wmain()
-
-
-
-
-
