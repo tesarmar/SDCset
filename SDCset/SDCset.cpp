@@ -980,8 +980,6 @@ void DoGlobal(IN int argc, IN char* argv[])
 			printf("Unknown DFS option\nassuming off\n");
 			GCfg.DFSchannels = 0;
 		}
-
-		GCfg.DFSchannels = atoi(sDFSchan);
 	}
 
 	char* sAggressive = NULL;
