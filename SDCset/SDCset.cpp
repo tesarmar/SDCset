@@ -423,7 +423,7 @@ void SetUserCert(SDCConfig *SDCcfg, char *sUser, char *uCert, char *sCert) {
 				pCurrCertContext = CertEnumCertificatesInStore(hSysStore, pPrevCertContext);
 				pPrevCertContext = pCurrCertContext;
 				if (pCurrCertContext != NULL) {
-					CertGetNameString( pCurrCertContext, CERT_NAME_SIMPLE_DISPLAY_TYPE, 0, NULL, szFriendly, 256);
+					CertGetNameString( pCurrCertContext, CERT_NAME_FRIENDLY_DISPLAY_TYPE, 0, NULL, szFriendly, 256);
 					wcstombs(chFriendly, szFriendly, 256);
 					if (strcmp(chFriendly, uCert) == 0) {
 						dwPropId = 0;
