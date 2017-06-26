@@ -200,8 +200,12 @@ The number of samples to be averaged together when computing RSSI
 delay before sending out probes when AP's aren't located
 #### -tray
 	on
-off
+	off
 Display the signal strength icon in the System Tray.
+#### -opmk
+	on
+	off
+Enable or disable OPMK caching (OKC).
 #### -disppwd
 	on
 	off
