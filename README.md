@@ -33,17 +33,19 @@ Name assigned to the Summit radio and client device that uses it
 #### ``-username <user name>``
 #### ``-userpwd <user password>``
 
-#### ``-rfmode <mode>``
+#### ``-rfmode [b_only|bg|g_only|bg_subset|a_only|abg|bga|abgn|bgna|adhoc]``
 
-> **List of available modes:**
-> b_only; bg; g_only; bg_subset; a_only; abg; bga; abgn; bgna; adhoc
-
-Use of 802.11g and/or 802.11b when interacting with AP:
+Use of RF modes when interacting with AP:
 
  - ``b_only`` – 1, 2, 5.5 and 11 Mbps
  - ``bg`` – all 802.11b and 802.11g rates
- - ``g_only`` – 6, 9, 12, 18, 24, 36, 48 and 54 Mbps
- - ``bg_subset`` – optimized rates of 1, 2, 5.5, 6, 11, 24, 36 and 54 Mbps
+ - ``g_only`` – 6, 9, 12, 18, 24, 36, 48 and 54 Mbps (2.4GHz band)
+ - ``bg_subset`` – 1, 2, 5.5, 6, 11, 24, 36 and 54 Mbps
+ - ``a_only`` – 6, 9, 12, 18, 24, 36, 48 and 54 Mbps (5GHz band)
+ - ``abg`` – all 802.11b and 802.11a/g rates (5GHz band preferred)
+ - ``bga`` – all 802.11b and 802.11a/g rates (2.4GHz band preferred)
+ - ``abgn`` – all 802.11b and 802.11a/g/n rates (5GHz band preferred)
+ - ``bgna`` – all 802.11b and 802.11a/g/n rates (2.4GHz band preferred)
  - ``adhoc`` – peer to peer mode
 
 #### ``-pwr [cam|fast|max]``
