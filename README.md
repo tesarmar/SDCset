@@ -117,18 +117,17 @@ Set on if the Microsoft certificate store should be used for a CA certificate if
 
 
 ### ``-global``
-#### ``-roam_trig[50|55|60|65|70|75|80|85|90]``
+#### ``-roam_trig [50|55|60|65|70|75|80|85|90]``
 When moving average RSSI from current AP is weaker than Roam Trigger, radio does a roam scan where it probes for an AP with a signal that is at least Roam Delta dBm stronger
 #### ``-roam_delta [5|10|15|20|25|30|35]``
 When Roam Trigger is met, second AP's signal strength (RSSI) must be Roam Delta dBm stronger than moving average RSSI for current AP  before radio will attempt to roam to second AP
 #### ``-roam_per [5|10|15|20|25|30|35|40|45|50|55|60]``
 After association or roam scan (with no roam), radio will collect RSSI scan data for Roam Period seconds before considering roaming
 #### ``-dfs_chan [on|off]``
-DFS channels support for 5GHz (802.11a)
-
+DFS channels support for 5GHz (802.11a/n)
 #### ``-aggressive [on|off]``
 When this setting is On and the current connection to an AP becomes tenuous, the radio scans for available APs more aggressively. Aggressive scanning complements and works in conjunction with the standard scanning that is configured through the Roam Trigger, Roam Delta, and Roam Period settings. Summit recommends that the Aggressive Scan global setting be On unless there is significant co-channel interference because of overlapping coverage from APs that are on the same channel.
-#### ``-ccx  [optimized|on|off]``
+#### ``-ccx [optimized|on|off]``
 
  - on – Use Cisco IE and CCX version number; support all CCX features
  - optimized – Use Cisco IE and CCX version number; support all CCX features except AP-assisted roaming, AP-specified maximum transmit power, and radio management
@@ -147,9 +146,9 @@ If packet size (in bytes) exceeds threshold, then packet is fragmented
 #### ``-rts {0-2347}``
 Packet size above which RTS/CTS is required on link
 #### ``-cert_path <path name>``
-The directory path to search for security certificates.  Maximum of 64 characters.
+The directory path to search for security certificates. Maximum of 64 characters.
 #### ``-opt_chan <channels>``
-When using b/g optimized mode (bg_lrs), setting this value restricts the radio to using and searching the specified channels.  The value is given in hex, with bit 0 representing channel 1, and bit 12 representing channel 13.  So to configure channels 1, 6 and 11, the channel value would be “0421”
+When using b/g optimized mode (bg_lrs), setting this value restricts the radio to using and searching the specified channels.  The value is given in hex, with bit 0 representing channel 1, and bit 12 representing channel 13. So to configure channels 1, 6 and 11, the channel value would be “0421”
 #### ``-avg_rssi {2-8}``
 The number of samples to be averaged together when computing RSSI
 #### ``-probe {2-60}``
@@ -173,6 +172,6 @@ The password required if adminrequire is on.
 
  - Any string may be quoted to allow it to contain spaces or special characters, except that quote itself is not allowed in the string.
  - As long is it is not within a quoted string, the following two special sequences may be used to insert the given value:
-  - ``%s`` – insert the terminal serial number.  So to set the client name to the serial number of the terminal , you would use ``-client %s``
-  - ``%m`` – insert the terminal RF MAC address.  So to set the client name to DLM followed by the MAC address, you would use ``–client DLM%m``
+  - ``%s`` – insert the terminal serial number. So to set the client name to the serial number of the terminal, you would use ``-client %s``
+  - ``%m`` – insert the terminal RF MAC address. So to set the client name to DLM followed by the MAC address, you would use ``–client DLM%m``
 
