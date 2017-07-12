@@ -117,6 +117,7 @@ Set on if the Microsoft certificate store should be used for a CA certificate if
 
 
 ### ``-global``
+Modify the global WLAN card settings using the options below.
 #### ``-roam_trig [50|55|60|65|70|75|80|85|90]``
 When moving average RSSI from current AP is weaker than Roam Trigger, radio does a roam scan where it probes for an AP with a signal that is at least Roam Delta dBm stronger
 #### ``-roam_delta [5|10|15|20|25|30|35]``
