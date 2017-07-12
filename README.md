@@ -65,13 +65,13 @@ Set the encryption mode for the specified configuration to the given mode.  If s
  - ``none`` – no encryption
  - ``dynamic`` – WEP with key generated during EAP authentication
  - ``static`` – WEP with up to four static keys -- 40-bit or 128-bit in ASCII or hex -- defined under WEP/PSK Keys
+ - ``ckip`` – WEP with Cisco Key Integrity Protocol
+ - ``autockip`` – WEP with Cisco Key Integrity Protocol (?)
  - ``wpapsk`` – TKIP with PSK -- ASCII passphrase or hex PSK -- defined under WEP/PSK Keys
- - ``wpatkip`` – with key generated during EAP authentication
+ - ``wpatkip`` – TKIP with key generated during EAP authentication
  - ``wpa2psk`` – AES with PSK -- ASCII passphrase or hex PSK -- defined under WEP/PSK Keys
  - ``wpa2aes`` – AES with key generated during EAP authentication
  - ``cckmtkip`` – TKIP with key generated during EAP authentication and with Cisco key management protocol for fast reauthentication
- - ``ckip`` –
- - ``autockip`` –
  - ``cckmaes`` – AES with key generated during EAP authentication and with Cisco key management protocol for fast reauthentication
 
 #### ``-key1 <wep key>``
