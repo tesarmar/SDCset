@@ -7,7 +7,7 @@ A command line utility used to set and control Laird Summit 802.11 supplicant
 
 ## Usage
 ## Command line options
-###``-?``
+### ``-?``
 Display the copyright and version information for SDCset.
 ### ``-ip``
 Displays the current status of the RF card, the terminal IP and MAC information, and the associated access point IP and MAC information if any.
@@ -60,17 +60,17 @@ Extensible Authentication Protocol type used for 802.1X authentication to the AP
 #### ``-encrypt [none|dynamic|static|wpapsk|wpatkip|wpa2psk|wpa2aes|cckmtkip|ckip|autockip|cckmaes]``
 Set the encryption mode for the specified configuration to the given mode.  If static is selected, the wep key(s) must be specified along with the transmit key number.  When using psk encryption, use the –psk option below to enter the preshared key.
 
- - none – no encryption
- - dynamic – WEP with key generated during EAP authentication
- - static – WEP with up to four static keys -- 40-bit or 128-bit in ASCII or hex -- defined under WEP/PSK Keys
- - wpapsk – TKIP with PSK -- ASCII passphrase or hex PSK -- defined under WEP/PSK Keys
- - wpatkip – with key generated during EAP authentication
- - wpa2psk – AES with PSK -- ASCII passphrase or hex PSK -- defined under WEP/PSK Keys
- - wpa2aes – AES with key generated during EAP authentication
- - cckmtkip – TKIP with key generated during EAP authentication and with Cisco key management protocol for fast reauthentication
- - ckip –
- - autockip –
- - cckmaes – AES with key generated during EAP authentication and with Cisco key management protocol for fast reauthentication
+ - ``none`` – no encryption
+ - ``dynamic`` – WEP with key generated during EAP authentication
+ - ``static`` – WEP with up to four static keys -- 40-bit or 128-bit in ASCII or hex -- defined under WEP/PSK Keys
+ - ``wpapsk`` – TKIP with PSK -- ASCII passphrase or hex PSK -- defined under WEP/PSK Keys
+ - ``wpatkip`` – with key generated during EAP authentication
+ - ``wpa2psk`` – AES with PSK -- ASCII passphrase or hex PSK -- defined under WEP/PSK Keys
+ - ``wpa2aes`` – AES with key generated during EAP authentication
+ - ``cckmtkip`` – TKIP with key generated during EAP authentication and with Cisco key management protocol for fast reauthentication
+ - ``ckip`` –
+ - ``autockip`` –
+ - ``cckmaes`` – AES with key generated during EAP authentication and with Cisco key management protocol for fast reauthentication
 
 #### ``-key1 <wep key>``
 #### ``-key2 <wep key>``
