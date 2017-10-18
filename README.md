@@ -2,8 +2,15 @@
 A command line utility used to set and control Laird Summit 802.11 supplicant
 
 ## Download
+https://github.com/tesarmar/SDCset/releases
 
 ## Compatibility
+### SSD30AG
+ - Datalogic Elf
+ - Topsystem Voxter Elite
+
+### SSD40NBT
+ - Datalogic Falcon X3+
 
 ## Usage
 ## Command line options
