@@ -13,6 +13,34 @@ https://github.com/tesarmar/SDCset/releases
  - Datalogic Falcon X3+
 
 ## Usage
+ - Copy the application executable to some persistent directory in the device memory
+ - Create batch file including the desired command line parameters (see example below)
+ - Place the batch file to the Windows startup directory
+```batch
+@echo off
+
+rem Set application executable location
+set CMD=\somelocation\SDCset.exe
+
+rem Switch off the WLAN NIC during configuration
+start /wait "%CMD%" -radio off
+
+rem Set global settings
+start /wait "%CMD%" -global -roam_trig 65 -roam_delta 5 -roam_per 5 -dfs_chan on -aggressive on -ccx off -wmm on -txdiver on -rxdiver startmain -tray on -disppwd off -adminrequire on -adminpwd "adminpass" -opmk on
+
+rem Create/modify wireless profile
+start /wait "%CMD%" -config -add someprofile -ssid SOMESSID -client "someuser" -eap peapmschap -encrypt wpa2aes -eapuser "someuser" -eappassword "somepass" -eapvalidateserver off -eapusemsstore off -rfmode "bgna" -brate auto -pwr cam
+
+rem Set power settings
+start /wait "%CMD%" -power cam
+
+rem Activate the newly created/configured profile and reactivate WLAN NIC
+start /wait "%CMD%" -config -active someprofile
+start /wait "%CMD%" -radio on
+
+rem Remove default profile (active profile cannot be deleted)
+start /wait "%CMD%" -config -delete Default
+```
 ## Command line options
 ### ``-?``
 Display the copyright and version information for SDCset.
