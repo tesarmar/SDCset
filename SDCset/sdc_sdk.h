@@ -462,7 +462,7 @@ typedef struct _SDCGlobalConfig {
 	unsigned long keepAlive;	  // in cam mode how often a null packet gets sent in seconds (0 means never, 9 by default)
 	unsigned long trayIcon;     // enable 1
 	unsigned long aggScanTimer; // enable 1
-	unsigned long authTimeout;  // in seconds, for EAP credentials, default is 8 ms
+	unsigned long authTimeout;  // in seconds, for EAP credentials, default is 8 s
 	unsigned long autoProfile;  // not implemented
 	unsigned long PMKcaching;   //0 standard, 1 opportunistic key caching enabled
 	unsigned long defAdhocChannel; // when no beacons found this channel is used
