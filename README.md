@@ -68,7 +68,7 @@ Name assigned to the Summit radio and client device that uses it
 #### ``-username <user name>``
 #### ``-userpwd <user password>``
 
-#### ``-rfmode [b_only|bg|g_only|bg_subset|a_only|abg|bga|abgn|bgna|adhoc]``
+#### ``-rfmode [b_only|bg|g_only|bg_subset|a_only|abg|bga|gn|an|abgn|bgna|adhoc]``
 
 Use of Radio modes when interacting with AP or another peer:
 
