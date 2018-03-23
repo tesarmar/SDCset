@@ -73,17 +73,17 @@ Name assigned to the Summit radio and client device that uses it
 Use of Radio modes when interacting with AP or another peer:
 
  - ``b_only`` – 1, 2, 5.5 and 11 Mbps; 2.4GHz band only
- - ``bg`` – all 802.11b and 802.11g rates, plus 802.11n rates if supported; 2.4GHz band only (Default for 802.11bg radios)
+ - ``bg`` – all 802.11b and 802.11g rates; 2.4GHz band only (Default for 802.11bg radios)
  - ``g_only`` – 6, 9, 12, 18, 24, 36, 48 and 54 Mbps; 2.4GHz band only
  - ``bg_subset`` – 1, 2, 5.5, 6, 11, 24, 36 and 54 Mbps; 2.4GHz band only
- - ``a_only`` – 6, 9, 12, 18, 24, 36, 48 and 54 Mbps, plus 802.11n rates if supported; 5GHz band only
+ - ``a_only`` – 6, 9, 12, 18, 24, 36, 48 and 54 Mbps; 5GHz band only
  - ``abg`` – all 802.11b and 802.11a/g rates; 5GHz band preferred (Default for 802.11abg radios)
  - ``bga`` – all 802.11b and 802.11a/g rates; 2.4GHz band preferred
+ - ``gn`` – all 802.11g/n rates; 2.4GHz band only
+ - ``an`` – all 802.11a/n rates; 5GHz band only
  - ``abgn`` – all 802.11b and 802.11a/g/n rates; 5GHz band preferred
  - ``bgna`` – all 802.11b and 802.11a/g/n rates; 2.4GHz band preferred
  - ``adhoc`` – peer to peer mode
- 
- Note: For Cisco APs running IOS in autonomous mode (without controllers) Summit recommends to use "BG subset". For Cisco APs that are tied to controllers and for non-Cisco APs, Summit recommends to use "BG rates full". More info here http://www.summitdata.com/Documents/Glossary/knowledge_center_r.html#radio_mode.
 
 #### ``-pwr [cam|fast|max]``
 Power save mode for the radio:
